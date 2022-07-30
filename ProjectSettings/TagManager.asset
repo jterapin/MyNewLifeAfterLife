@@ -53,3 +53,12 @@ TagManager:
   - name: Player
     uniqueID: 2703362285
     locked: 0
+  - name: UI
+    uniqueID: 1031735933
+    locked: 0
+  - name: Widget Container
+    uniqueID: 861204733
+    locked: 0
+  - name: Widget Item
+    uniqueID: 2098347617
+    locked: 0
