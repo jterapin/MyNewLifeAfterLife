@@ -7,11 +7,11 @@ public class CurrentSchedule : MonoBehaviour
 {
     public ActivityObject[] Weeks = new ActivityObject[4];
 
+    public Sprite defaultIcon;
+
     public ActivityObject selectedActivity;
     void Start()
-    {
-        Debug.Log(Weeks);
-    }
+    { }
 
     // Adding An Activity
     public void AssignActivity(ActivityObject activity)
@@ -20,8 +20,10 @@ public class CurrentSchedule : MonoBehaviour
             if (Weeks[i] == null)
             {
                 Weeks[i] = activity;
-                Transform child = transform.GetChild(i);
-                Debug.Log(child.name);
+                int position = i + 1;
+                string str = "Week" + position.ToString() + "/Slot";
+                Transform child = transform.Find(str);
+                child.transform.GetComponent<Image>().sprite = activity.activityIcon;
                 break;
             }
     }
@@ -32,6 +34,10 @@ public class CurrentSchedule : MonoBehaviour
             if (i == selectedActivityPosition)
             {
                 Weeks[i] = null;
+                int position = i + 1;
+                string str = "Week" + position.ToString() + "/Slot";
+                Transform child = transform.Find(str);
+                child.transform.GetComponent<Image>().sprite = defaultIcon;
                 break;
             }
     }

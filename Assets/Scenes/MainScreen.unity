@@ -501,7 +501,7 @@ GameObject:
   - component: {fileID: 280968269}
   - component: {fileID: 280968268}
   m_Layer: 5
-  m_Name: Week (3)
+  m_Name: Week3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1010,7 +1010,7 @@ GameObject:
   - component: {fileID: 431713795}
   - component: {fileID: 431713794}
   m_Layer: 5
-  m_Name: Week (2)
+  m_Name: Week2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1441,7 +1441,7 @@ GameObject:
   - component: {fileID: 563062629}
   - component: {fileID: 563062631}
   m_Layer: 5
-  m_Name: Week Slot
+  m_Name: Slot
   m_TagString: Slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3127,7 +3127,7 @@ GameObject:
   - component: {fileID: 1141283317}
   - component: {fileID: 1141283316}
   m_Layer: 5
-  m_Name: Week Header
+  m_Name: Header
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3473,7 +3473,7 @@ GameObject:
   - component: {fileID: 1249950975}
   - component: {fileID: 1249950974}
   m_Layer: 5
-  m_Name: Week (1)
+  m_Name: Week1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3681,7 +3681,7 @@ GameObject:
   - component: {fileID: 1315904535}
   - component: {fileID: 1315904534}
   m_Layer: 5
-  m_Name: Week Header
+  m_Name: Header
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4616,7 +4616,7 @@ GameObject:
   - component: {fileID: 1550769403}
   - component: {fileID: 1550769404}
   m_Layer: 5
-  m_Name: Week Slot
+  m_Name: Slot
   m_TagString: Slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5064,7 +5064,7 @@ GameObject:
   - component: {fileID: 1611063476}
   - component: {fileID: 1611063475}
   m_Layer: 5
-  m_Name: Week Header
+  m_Name: Header
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5141,7 +5141,7 @@ GameObject:
   - component: {fileID: 1682767120}
   - component: {fileID: 1682767122}
   m_Layer: 5
-  m_Name: Week Slot
+  m_Name: Slot
   m_TagString: Slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5325,7 +5325,7 @@ GameObject:
   - component: {fileID: 1801710730}
   - component: {fileID: 1801710729}
   m_Layer: 5
-  m_Name: Week (4)
+  m_Name: Week4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5583,6 +5583,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  defaultIcon: {fileID: -134629319, guid: c8b86bc0f5f3e4bdfa7727f7ae695498, type: 3}
   selectedActivity: {fileID: 0}
 --- !u!1 &1888443409
 GameObject:
@@ -5740,7 +5741,7 @@ GameObject:
   - component: {fileID: 1909044154}
   - component: {fileID: 1909044156}
   m_Layer: 5
-  m_Name: Week Slot
+  m_Name: Slot
   m_TagString: Slot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6203,7 +6204,7 @@ GameObject:
   - component: {fileID: 2011619082}
   - component: {fileID: 2011619081}
   m_Layer: 5
-  m_Name: Week Header
+  m_Name: Header
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
