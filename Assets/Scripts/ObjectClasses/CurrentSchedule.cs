@@ -11,7 +11,23 @@ public class CurrentSchedule : MonoBehaviour
 
     public ActivityObject selectedActivity;
     void Start()
-    { }
+    {
+        RefreshSchedule();
+    }
+
+    // Render Activities at Start
+    public void RefreshSchedule()
+    {
+        for (int i = 0; i < Weeks.Length; i++)
+            if (Weeks[i] != null)
+            {
+                Debug.Log(Weeks[i]);
+                int position = i + 1;
+                string str = "Week" + position.ToString() + "/Slot";
+                Transform child = transform.Find(str);
+                child.transform.GetComponent<Image>().sprite = Weeks[i].activityIcon;
+            }
+    }
 
     // Adding An Activity
     public void AssignActivity(ActivityObject activity)
@@ -42,4 +58,9 @@ public class CurrentSchedule : MonoBehaviour
             }
     }
 
+    // sending CurrentSchedule to MonthLoop object
+    public ActivityObject[] getSchedule()
+    {
+        return Weeks;
+    }
 }
