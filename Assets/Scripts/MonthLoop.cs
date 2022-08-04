@@ -12,6 +12,7 @@ public class MonthLoop : MonoBehaviour
     void Start()
     {
         Schedule = currentSchedule.getSchedule();
+        LoopActivity();
     }
 
     void Update()
@@ -30,5 +31,13 @@ public class MonthLoop : MonoBehaviour
     public void ClosePanel()
     {
         Panel.SetActive(false);
+    }
+
+    public void LoopActivity()
+    {
+        Debug.Log(Schedule[0]);
+        Debug.Log(Schedule[0]);
+        Debug.Log(Schedule[0]);
+        Debug.Log(Schedule[0]);
     }
 }

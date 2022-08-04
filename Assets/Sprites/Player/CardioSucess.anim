@@ -35,17 +35,6 @@ AnimationClip:
     path: 
     classID: 114
     script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  - curve:
-    - time: 0
-      value: {fileID: -2005638724, guid: 70b71406cc7174fb5970ea9463ab62f0, type: 3}
-    - time: 0.41666666
-      value: {fileID: -2005638724, guid: 70b71406cc7174fb5970ea9463ab62f0, type: 3}
-    - time: 0.96666664
-      value: {fileID: -2005638724, guid: 70b71406cc7174fb5970ea9463ab62f0, type: 3}
-    attribute: m_Sprite
-    path: Emoticon
-    classID: 212
-    script: {fileID: 0}
   m_SampleRate: 60
   m_WrapMode: 0
   m_Bounds:
@@ -60,13 +49,6 @@ AnimationClip:
       typeID: 114
       customType: 0
       isPPtrCurve: 1
-    - serializedVersion: 2
-      path: 1595814786
-      attribute: 0
-      script: {fileID: 0}
-      typeID: 212
-      customType: 23
-      isPPtrCurve: 1
     pptrCurveMapping:
     - {fileID: -1856745333, guid: 87092d70192f948048cf5783efa09659, type: 3}
     - {fileID: -2098926469, guid: 87092d70192f948048cf5783efa09659, type: 3}
@@ -74,9 +56,6 @@ AnimationClip:
     - {fileID: -774238128, guid: 87092d70192f948048cf5783efa09659, type: 3}
     - {fileID: -1559072353, guid: 87092d70192f948048cf5783efa09659, type: 3}
     - {fileID: 1152389658, guid: 87092d70192f948048cf5783efa09659, type: 3}
-    - {fileID: -2005638724, guid: 70b71406cc7174fb5970ea9463ab62f0, type: 3}
-    - {fileID: -2005638724, guid: 70b71406cc7174fb5970ea9463ab62f0, type: 3}
-    - {fileID: -2005638724, guid: 70b71406cc7174fb5970ea9463ab62f0, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
