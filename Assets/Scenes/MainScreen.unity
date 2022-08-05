@@ -709,7 +709,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.2, y: -23.4}
+  m_AnchoredPosition: {x: -4.2, y: -23.400002}
   m_SizeDelta: {x: 16, y: 22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &198927853
@@ -4482,6 +4482,7 @@ GameObject:
   - component: {fileID: 1087512691}
   - component: {fileID: 1087512690}
   - component: {fileID: 1087512689}
+  - component: {fileID: 1087512692}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -4576,6 +4577,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1087512692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087512688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55742d5da875d4b409ffdbe18f080d24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerName: Player
+  Activity: {fileID: 0}
 --- !u!1 &1108498497
 GameObject:
   m_ObjectHideFlags: 0
@@ -8285,7 +8300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Weeks:
   - {fileID: 11400000, guid: 79578816fd4604af7bbe70d01be62a35, type: 2}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 79578816fd4604af7bbe70d01be62a35, type: 2}
   - {fileID: 11400000, guid: 5e65a632b60444468a418c7b2a8803eb, type: 2}
   - {fileID: 11400000, guid: 79578816fd4604af7bbe70d01be62a35, type: 2}
   defaultIcon: {fileID: -134629319, guid: c8b86bc0f5f3e4bdfa7727f7ae695498, type: 3}
@@ -10817,3 +10832,5 @@ MonoBehaviour:
   Panel: {fileID: 6021343099195185666}
   currentSchedule: {fileID: 1810375193}
   Schedule: []
+  PlayerStat: {fileID: 1087512692}
+  test: 

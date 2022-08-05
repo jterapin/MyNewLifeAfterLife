@@ -16,3 +16,6 @@ MonoBehaviour:
   activityIcon: {fileID: 1342380509, guid: c8b86bc0f5f3e4bdfa7727f7ae695498, type: 3}
   type: 0
   description: Keep on runnin'
+  PlayerStat: {fileID: 0}
+  IncreasingStat: 0
+  IncreasingAmt: 1
