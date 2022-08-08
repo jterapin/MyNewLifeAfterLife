@@ -16,4 +16,13 @@ MonoBehaviour:
   activityIcon: {fileID: 21300000, guid: 1427ff290abd64bab92fe6c819d0554b, type: 3}
   type: 2
   description: Hahahaha do nothing :)
-  decreaseStressValue: 0
+  Animation: DoNothing
+  animationSuccess: 
+  animationFailure: 
+  affectedStat: 3
+  statSuccessValue: 0
+  statFailureValue: 0
+  stressSuccessValue: 0
+  stressFailureValue: 0
+  successMessage: 
+  failureMessage: 

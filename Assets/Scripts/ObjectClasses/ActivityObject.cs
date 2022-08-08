@@ -11,8 +11,8 @@ public enum ActivityType
 public enum AffectedStat
 {
     Stamina,
-    Strength,
     Agility,
+    Magic,
     None
 }
 
@@ -22,12 +22,22 @@ public abstract class ActivityObject : ScriptableObject
     public Sprite activityIcon;
     public ActivityType type;
 
-    public AffectedStat affectedStat;
-
     // Easier to read description in the Unity Editor
     [TextArea(15, 20)]
     public string description;
 
+    public string Animation;
+    public string animationSuccess;
+    public string animationFailure;
+
+    public AffectedStat affectedStat;
+    public int statSuccessValue;
+    public int statFailureValue;
+    public int stressSuccessValue;
+    public int stressFailureValue;
+    public string activityMessage;
+    public string successMessage = "";
+    public string failureMessage = "";
 
 
 }
