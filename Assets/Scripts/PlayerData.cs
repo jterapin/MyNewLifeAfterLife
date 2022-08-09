@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInfo : MonoBehaviour
+public class PlayerData : MonoBehaviour
 {
     public string playerName = "Player";
     public Dictionary<string, int> stats = new Dictionary<string, int>()

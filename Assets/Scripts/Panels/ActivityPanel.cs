@@ -6,8 +6,8 @@ public class ActivityPanel : MonoBehaviour
     public GameObject Panel;
     public CurrentSchedule currentSchedule;
     public ActivityObject[] Schedule;
-    public PlayerInfo Player;
-    public LogDisplay LogText;
+    public PlayerData Player;
+    public ActivityLogDisplay ActivityLog;
     private Animator animator;
 
     void Start()
@@ -27,7 +27,7 @@ public class ActivityPanel : MonoBehaviour
 
     private void Awake()
     {
-        LogText = GameObject.Find("LogController").GetComponent<LogDisplay>();
+        ActivityLog = GameObject.Find("ActivityLogController").GetComponent<ActivityLogDisplay>();
         animator = GameObject.Find("Player").GetComponent<Animator>();
     }
 
@@ -52,8 +52,8 @@ public class ActivityPanel : MonoBehaviour
             {
                 string affectedStat = Schedule[0].affectedStat.ToString();
                 yield return new WaitForSeconds(2);
-                LogText.UpdateText($"Week {i + 1}....\n");
-                LogText.UpdateText($"Starting {Schedule[i].activityName}...\n");
+                ActivityLog.UpdateText($"Week {i + 1}....\n");
+                ActivityLog.UpdateText($"Starting {Schedule[i].activityName}...\n");
                 animator.SetTrigger(Schedule[i].activityAnimation);
                 yield return new WaitForSeconds(1);
                 bool ActivitySuccess = isActivitySuccessful();
@@ -61,8 +61,8 @@ public class ActivityPanel : MonoBehaviour
                 {
                     animator.SetTrigger(Schedule[i].animationSuccess);
                     yield return new WaitForSeconds(1);
-                    LogText.UpdateText($"{Schedule[i].successMessage}\n");
-                    LogText.UpdateText($"Gained {Schedule[i].statSuccessValue} {affectedStat}\n");
+                    ActivityLog.UpdateText($"{Schedule[i].successMessage}\n");
+                    ActivityLog.UpdateText($"Gained {Schedule[i].statSuccessValue} {affectedStat}\n");
                     Player.AddStat(affectedStat, Schedule[i].statSuccessValue);
                     Debug.Log(Player.stats[affectedStat]);
                 }
@@ -70,15 +70,15 @@ public class ActivityPanel : MonoBehaviour
                 {
                     animator.SetTrigger(Schedule[i].animationFailure);
                     yield return new WaitForSeconds(1);
-                    LogText.UpdateText($"{Schedule[i].failureMessage}\n");
+                    ActivityLog.UpdateText($"{Schedule[i].failureMessage}\n");
                 }
             }
             else
             {
                 Debug.Log("Activity is not Training Object!");
                 yield return new WaitForSeconds(2);
-                LogText.UpdateText($"Week {i + 1}....\n");
-                LogText.UpdateText($"Starting {Schedule[i].activityName}...\n");
+                ActivityLog.UpdateText($"Week {i + 1}....\n");
+                ActivityLog.UpdateText($"Starting {Schedule[i].activityName}...\n");
                 animator.SetTrigger(Schedule[i].activityAnimation);
                 yield return new WaitForSeconds(1);
             }
