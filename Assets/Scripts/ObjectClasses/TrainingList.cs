@@ -7,9 +7,7 @@ public class TrainingList : MonoBehaviour
     [SerializeField] private GameObject slotHolder;
     [SerializeField] private TrainingObject activityToAdd;
     public List<TrainingObject> activities = new List<TrainingObject>();
-
     private GameObject[] slots;
-
 
     public void Start()
     {
@@ -17,10 +15,10 @@ public class TrainingList : MonoBehaviour
         slots = new GameObject[slotHolder.transform.childCount];
         for (int i = 0; i < slotHolder.transform.childCount; i++)
             slots[i] = slotHolder.transform.GetChild(i).gameObject;
-        RefreshUI();
+        RefreshSlots();
     }
 
-    public void RefreshUI()
+    public void RefreshSlots()
     {
         for (int i = 0; i < slots.Length; i++)
         {

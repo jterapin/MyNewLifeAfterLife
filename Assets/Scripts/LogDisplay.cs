@@ -4,13 +4,13 @@ using UnityEngine;
 using TMPro;
 using System;
 
-public class DialogDisplay : MonoBehaviour
+public class LogDisplay : MonoBehaviour
 {
-    public TMP_Text dialogText;
+    public TMP_Text logText;
     // Start is called before the first frame update
     void Start()
     {
-        dialogText.text = "Hello\n";
+        logText.text = "Hello\n";
     }
 
     // Update is called once per frame
@@ -21,7 +21,7 @@ public class DialogDisplay : MonoBehaviour
 
     public void UpdateText(string text)
     {
-        dialogText.text += text;
+        logText.text += text;
     }
 
 }

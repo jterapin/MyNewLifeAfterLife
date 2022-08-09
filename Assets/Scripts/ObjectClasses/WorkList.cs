@@ -7,9 +7,7 @@ public class WorkList : MonoBehaviour
     [SerializeField] private GameObject slotHolder;
     [SerializeField] private WorkObject activityToAdd;
     public List<WorkObject> activities = new List<WorkObject>();
-
     private GameObject[] slots;
-
 
     public void Start()
     {
@@ -17,10 +15,10 @@ public class WorkList : MonoBehaviour
         slots = new GameObject[slotHolder.transform.childCount];
         for (int i = 0; i < slotHolder.transform.childCount; i++)
             slots[i] = slotHolder.transform.GetChild(i).gameObject;
-        RefreshUI();
+        RefreshSlots();
     }
 
-    public void RefreshUI()
+    public void RefreshSlots()
     {
         for (int i = 0; i < slots.Length; i++)
         {
@@ -36,7 +34,7 @@ public class WorkList : MonoBehaviour
             }
         }
     }
-    // Adding a Training Activity
+    // Adding a Work Activity
     public void Add(WorkObject activity)
     {
         activities.Add(activity);

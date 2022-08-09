@@ -4,29 +4,30 @@ using UnityEngine;
 
 public class AnimationController : MonoBehaviour
 {
-    public DialogDisplay DialogText;
+    public LogDisplay LogText;
+
     private void Awake()
     {
-        DialogText = GameObject.Find("DialogueController").GetComponent<DialogDisplay>();
+        LogText = GameObject.Find("LogController").GetComponent<LogDisplay>();
     }
 
-    public void StartActivity()
+    private void StartActivity()
     {
-        DialogText.UpdateText("Time to start my activity!\n");
+        LogText.UpdateText("Time to start my activity!\n");
     }
 
-    public void FinishActivity()
+    private void FinishActivity()
     {
-        DialogText.UpdateText($"Activity Complete....\n");
+        LogText.UpdateText($"Activity Complete....\n");
     }
 
-    public void AnnounceSuccessResult()
+    private void AnnounceSuccessResult()
     {
-        DialogText.UpdateText("Activity SUCCESS!\n");
+        LogText.UpdateText("Activity SUCCESS!\n");
     }
-    public void AnnounceFailureResult()
+    private void AnnounceFailureResult()
     {
-        DialogText.UpdateText("Activity FAILED!\n");
+        LogText.UpdateText("Activity FAILED!\n");
     }
 
 }

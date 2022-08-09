@@ -16,7 +16,7 @@ MonoBehaviour:
   activityIcon: {fileID: 1342380509, guid: c8b86bc0f5f3e4bdfa7727f7ae695498, type: 3}
   type: 0
   description: Keep on runnin'
-  Animation: Cardio
+  activityAnimation: Cardio
   animationSuccess: CardioSuccess
   animationFailure: CardioFailure
   affectedStat: 0
@@ -24,5 +24,6 @@ MonoBehaviour:
   statFailureValue: 1
   stressSuccessValue: 1
   stressFailureValue: 5
+  activityMessage: 
   successMessage: Good day. I ran like the wind!
   failureMessage: I fell over, oops.
