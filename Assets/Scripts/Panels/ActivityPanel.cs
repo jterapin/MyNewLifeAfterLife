@@ -31,18 +31,18 @@ public class ActivityPanel : MonoBehaviour
         animator = GameObject.Find("Player").GetComponent<Animator>();
     }
 
-    public bool isActivitySuccessful()
-    {
-        int digit = UnityEngine.Random.Range(0, 2);
-        if (digit == 0)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
+    // public bool isActivitySuccessful()
+    // {
+    //     int digit = UnityEngine.Random.Range(0, 2);
+    //     if (digit == 0)
+    //     {
+    //         return true;
+    //     }
+    //     else
+    //     {
+    //         return false;
+    //     }
+    // }
 
     public IEnumerator ActivityLoop()
     {
@@ -56,7 +56,8 @@ public class ActivityPanel : MonoBehaviour
                 ActivityLog.UpdateText($"Starting {Schedule[i].activityName}...\n");
                 animator.SetTrigger(Schedule[i].activityAnimation);
                 yield return new WaitForSeconds(1);
-                bool ActivitySuccess = isActivitySuccessful();
+                // bool ActivitySuccess = isActivitySuccessful();
+                bool ActivitySuccess = true;
                 if (ActivitySuccess == true)
                 {
                     animator.SetTrigger(Schedule[i].animationSuccess);
@@ -64,7 +65,7 @@ public class ActivityPanel : MonoBehaviour
                     ActivityLog.UpdateText($"{Schedule[i].successMessage}\n");
                     ActivityLog.UpdateText($"Gained {Schedule[i].statSuccessValue} {affectedStat}\n");
                     Player.AddStat(affectedStat, Schedule[i].statSuccessValue);
-                    Debug.Log(Player.stats[affectedStat]);
+                    Debug.Log(PlayerData.stats[affectedStat]);
                 }
                 else
                 {

@@ -5918,7 +5918,7 @@ GameObject:
   - component: {fileID: 570080119}
   m_Layer: 5
   m_Name: Stamina
-  m_TagString: Untagged
+  m_TagString: Stamina
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14507,7 +14507,7 @@ GameObject:
   - component: {fileID: 1238552710}
   m_Layer: 5
   m_Name: Stamina
-  m_TagString: Untagged
+  m_TagString: Stamina
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15594,10 +15594,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weeks:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 79578816fd4604af7bbe70d01be62a35, type: 2}
+  - {fileID: 11400000, guid: 79578816fd4604af7bbe70d01be62a35, type: 2}
+  - {fileID: 11400000, guid: 5e65a632b60444468a418c7b2a8803eb, type: 2}
+  - {fileID: 11400000, guid: 5e65a632b60444468a418c7b2a8803eb, type: 2}
   defaultIcon: {fileID: -134629319, guid: c8b86bc0f5f3e4bdfa7727f7ae695498, type: 3}
 --- !u!1 &1349064343
 GameObject:
@@ -24800,6 +24800,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2098953358}
   - component: {fileID: 2098953359}
+  - component: {fileID: 2098953360}
   m_Layer: 0
   m_Name: PlayerController
   m_TagString: Untagged
@@ -24835,6 +24836,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: Player
+  previousLife: 
+  starSign: 
+--- !u!114 &2098953360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098953354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2191fe8c6346c424ab7b6bc685cf962b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  staminaDisplays:
+  - {fileID: 636316252}
+  - {fileID: 360652090}
 --- !u!1 &2111328675
 GameObject:
   m_ObjectHideFlags: 0
@@ -26224,6 +26243,7 @@ GameObject:
   - component: {fileID: 8604622060778344031}
   - component: {fileID: 4113314241666337791}
   - component: {fileID: 9004006583121852284}
+  - component: {fileID: 9004006583121852285}
   m_Layer: 5
   m_Name: ActivityPanel
   m_TagString: Untagged
@@ -26745,3 +26765,17 @@ MonoBehaviour:
   Schedule: []
   Player: {fileID: 2098953359}
   ActivityLog: {fileID: 0}
+--- !u!114 &9004006583121852285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6021343099195185666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6078d55278fed4905ad55fbbafa5f5a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 0}
+  staminaValueText: {fileID: 360652090}

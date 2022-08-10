@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class StatsPanel : MonoBehaviour
+public class StatsDisplay : MonoBehaviour
 {
     public Dictionary<string, int> stats = PlayerData.stats;
     public TMP_Text nameText;
-    public TMP_Text staminaValueText;
+    public TMP_Text[] staminaDisplays;
 
     private void Start()
     {
         Debug.Log(stats["Stamina"]);
-        staminaValueText.text = stats["Stamina"].ToString();
+        staminaDisplays[0].text = stats["Stamina"].ToString();
     }
 
     private void Validate()
@@ -22,8 +22,7 @@ public class StatsPanel : MonoBehaviour
 
     private void Update()
     {
-        staminaValueText.text = stats["Stamina"].ToString();
+        staminaDisplays[0].text = stats["Stamina"].ToString();
     }
-
 
 }

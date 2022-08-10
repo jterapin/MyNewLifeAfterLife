@@ -6,9 +6,9 @@ public class PlayerData : MonoBehaviour
     public string playerName = "Player";
     public string previousLife = "";
     public string starSign = "";
-    public Dictionary<string, int> stats = new Dictionary<string, int>()
+    public static Dictionary<string, int> stats = new Dictionary<string, int>()
     {
-        {"Stamina",0},
+        {"Stamina",5},
         {"Strength", 0},
         {"Agility", 0},
         {"Magic", 0},
@@ -19,7 +19,7 @@ public class PlayerData : MonoBehaviour
     };
     public Dictionary<string, int> skills = new Dictionary<string, int>()
     {
-        {"Sword",0},
+        {"Sword",5},
         {"Archery", 0},
         {"Cooking", 0},
         {"Fishing", 0},
@@ -40,5 +40,7 @@ public class PlayerData : MonoBehaviour
             Debug.Log("No such Stat is present");
         }
     }
+
+
 
 }
