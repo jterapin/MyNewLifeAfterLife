@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CurrentSchedule : MonoBehaviour
+public class SchedulePanel : MonoBehaviour
 {
-    public ActivityObject[] Weeks = new ActivityObject[4];
+    public ActivityObject[] weeks = new ActivityObject[4];
 
     public Sprite defaultIcon;
 
-    public ActivityObject selectedActivity;
     void Start()
     {
         RefreshSchedule();
@@ -18,26 +17,26 @@ public class CurrentSchedule : MonoBehaviour
     // Render Activities at Start
     public void RefreshSchedule()
     {
-        for (int i = 0; i < Weeks.Length; i++)
-            if (Weeks[i] != null)
+        for (int i = 0; i < weeks.Length; i++)
+            if (weeks[i] != null)
             {
-                Debug.Log(Weeks[i]);
                 int position = i + 1;
-                string str = "Week" + position.ToString() + "/Slot";
+                string str = "Content/CurrentSchedule/Week" + position.ToString() + "/Slot";
                 Transform child = transform.Find(str);
-                child.transform.GetComponent<Image>().sprite = Weeks[i].activityIcon;
+                child.transform.GetComponent<Image>().sprite = weeks[i].activityIcon;
             }
     }
 
     // Adding An Activity
     public void AssignActivity(ActivityObject activity)
     {
-        for (int i = 0; i < Weeks.Length; i++)
-            if (Weeks[i] == null)
+        for (int i = 0; i < weeks.Length; i++)
+            if (weeks[i] == null)
             {
-                Weeks[i] = activity;
+                weeks[i] = activity;
                 int position = i + 1;
-                string str = "Week" + position.ToString() + "/Slot";
+                string str = "Content/CurrentSchedule/Week" + position.ToString() + "/Slot";
+                Debug.Log(str);
                 Transform child = transform.Find(str);
                 child.transform.GetComponent<Image>().sprite = activity.activityIcon;
                 break;
@@ -46,12 +45,12 @@ public class CurrentSchedule : MonoBehaviour
 
     public void DeleteActivity(int selectedActivityPosition)
     {
-        for (int i = 0; i < Weeks.Length; i++)
+        for (int i = 0; i < weeks.Length; i++)
             if (i == selectedActivityPosition)
             {
-                Weeks[i] = null;
+                weeks[i] = null;
                 int position = i + 1;
-                string str = "Week" + position.ToString() + "/Slot";
+                string str = "Content/CurrentSchedule/Week" + position.ToString() + "/Slot";
                 Transform child = transform.Find(str);
                 child.transform.GetComponent<Image>().sprite = defaultIcon;
                 break;
@@ -61,6 +60,6 @@ public class CurrentSchedule : MonoBehaviour
     // sending CurrentSchedule to MonthLoop object
     public ActivityObject[] getSchedule()
     {
-        return Weeks;
+        return weeks;
     }
 }

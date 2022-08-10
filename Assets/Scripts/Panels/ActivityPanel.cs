@@ -4,7 +4,7 @@ using UnityEngine;
 public class ActivityPanel : MonoBehaviour
 {
     public GameObject Panel;
-    public CurrentSchedule currentSchedule;
+    public SchedulePanel schedulePanel;
     public ActivityObject[] Schedule;
     public PlayerData Player;
     public ActivityLogDisplay ActivityLog;
@@ -21,7 +21,7 @@ public class ActivityPanel : MonoBehaviour
 
     void OnEnable()
     {
-        Schedule = currentSchedule.getSchedule();
+        Schedule = schedulePanel.getSchedule();
         StartCoroutine(ActivityLoop());
     }
 
@@ -84,15 +84,9 @@ public class ActivityPanel : MonoBehaviour
             }
             yield return new WaitForSeconds(2);
             Debug.Log("I waited!");
-
-
-            // Debug.Log(Schedule[0].affectedStat);
-            // Debug.Log("...... does below work from Player Stat?");
-            // string thing = Schedule[0].affectedStat.ToString();
-            // Debug.Log(thing);
-            // Player.AddStat(thing, 5);
-            // DialogText.UpdateText("You did it!\n");
         }
+        // Reset ActivityLog here
+
     }
 
 
