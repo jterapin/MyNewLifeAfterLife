@@ -5,24 +5,34 @@ using TMPro;
 
 public class StatsDisplay : MonoBehaviour
 {
-    public Dictionary<string, int> stats = PlayerData.stats;
-    public TMP_Text nameText;
-    public TMP_Text[] staminaDisplays;
+    private Dictionary<string, int> stats = PlayerData.stats;
+    [SerializeField] GameObject Panel;
+    [SerializeField] TMP_Text stamina;
 
     private void Start()
     {
-        Debug.Log(stats["Stamina"]);
-        staminaDisplays[0].text = stats["Stamina"].ToString();
+
+        if (!Panel.GetComponent<StatsDisplay>().enabled)
+        {
+            Panel.GetComponent<StatsDisplay>().enabled = false;
+            Panel.GetComponent<StatsDisplay>().enabled = true;
+        }
     }
 
-    private void Validate()
+    private void OnEnable()
     {
-
+        UpdateStats();
     }
 
-    private void Update()
+    private void UpdateStats()
     {
-        staminaDisplays[0].text = stats["Stamina"].ToString();
+
+        stamina.text = stats["Stamina"].ToString();
+        stamina.text = stats["Stamina"].ToString();
+        stamina.text = stats["Stamina"].ToString();
+        stamina.text = stats["Stamina"].ToString();
+        stamina.text = stats["Stamina"].ToString();
+        stamina.text = stats["Stamina"].ToString();
     }
 
 }
