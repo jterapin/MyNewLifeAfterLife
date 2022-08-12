@@ -5,6 +5,6 @@ public class RestObject : ActivityObject
 {
     public void Awake()
     {
-        type = ActivityType.Rest;
+        Type = ActivityType.Rest;
     }
 }

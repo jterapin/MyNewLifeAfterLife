@@ -6,7 +6,7 @@ public class TrainingObject : ActivityObject
 {
     public void Awake()
     {
-        type = ActivityType.Training;
+        Type = ActivityType.Training;
     }
 
 }

@@ -12,18 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49199cba859fd457083312465b8bf8f2, type: 3}
   m_Name: Cardio
   m_EditorClassIdentifier: 
-  activityName: Cardio
-  activityIcon: {fileID: 1342380509, guid: c8b86bc0f5f3e4bdfa7727f7ae695498, type: 3}
-  type: 0
-  description: Keep on runnin'
-  activityAnimation: Cardio
-  animationSuccess: CardioSuccess
-  animationFailure: CardioFailure
-  affectedStat: 0
-  statSuccessValue: 2
-  statFailureValue: 1
-  stressSuccessValue: 1
-  stressFailureValue: 5
-  activityMessage: 
-  successMessage: Good day. I ran like the wind!
-  failureMessage: I fell over, oops.
+  ActivityName: Cardio
+  ActivityIcon: {fileID: 1342380509, guid: c8b86bc0f5f3e4bdfa7727f7ae695498, type: 3}
+  Type: 0
+  description: 
+  ActivityAnimation: Cardio
+  AnimationSuccess: CardioSuccess
+  AnimationFailure: CardioFailure
+  AffectedStat: 0
+  StatSuccessValue: 5
+  StatFailureValue: 1
+  StressSuccessValue: 2
+  StressFailureValue: 5
+  AffectedSkill: 7
+  SkillSuccessValue: 0
+  SkillFailureValue: 0
+  ActivityMessage: Time to run~
+  SuccessMessage: Good week! I ran like the wind~
+  FailureMessage: Oops, I fell over. Gotta rest up.

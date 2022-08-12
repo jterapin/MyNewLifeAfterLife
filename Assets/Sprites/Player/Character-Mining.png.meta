@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 954a8961b58af4f2f897c195525e84e8
+guid: a1fffc1bc3a5c4d04b5ecd3c9e040dcc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 42
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,7 +105,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pipo-popupemotes071_0
+      name: Character-Mining_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
-        width: 29
-        height: 31
+        width: 31
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad05ee9ce821541baa23227e2eaa6e76
-      internalID: 962382188
+      spriteID: a72de4d477db146d78a74819d8f5c1ae
+      internalID: 1517483331
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pipo-popupemotes071_1
+      name: Character-Mining_1
       rect:
         serializedVersion: 2
-        x: 33
+        x: 36
         y: 0
-        width: 29
-        height: 31
+        width: 31
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,29 +151,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3314b198cfb004d88aabcca5551b769f
-      internalID: 1937362126
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pipo-popupemotes071_2
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 0
-        width: 29
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0380a89ff8456489183e5127c646197b
-      internalID: -1700532954
+      spriteID: 0c652ae0400ca43fd82cdd91c643bf2e
+      internalID: 1114937289
       vertices: []
       indices: 
       edges: []
@@ -189,9 +168,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      pipo-popupemotes071_2: -1700532954
-      pipo-popupemotes071_0: 962382188
-      pipo-popupemotes071_1: 1937362126
+      Character-Mining_0: 1517483331
+      Character-Mining_1: 1114937289
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -5,6 +5,6 @@ public class WorkObject : ActivityObject
 {
     public void Awake()
     {
-        type = ActivityType.Work;
+        Type = ActivityType.Work;
     }
 }

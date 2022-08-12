@@ -23,7 +23,7 @@ public class SchedulePanel : MonoBehaviour
                 int position = i + 1;
                 string str = "Content/CurrentSchedule/Week" + position.ToString() + "/Slot";
                 Transform child = transform.Find(str);
-                child.transform.GetComponent<Image>().sprite = weeks[i].activityIcon;
+                child.transform.GetComponent<Image>().sprite = weeks[i].ActivityIcon;
             }
     }
 
@@ -38,7 +38,7 @@ public class SchedulePanel : MonoBehaviour
                 string str = "Content/CurrentSchedule/Week" + position.ToString() + "/Slot";
                 Debug.Log(str);
                 Transform child = transform.Find(str);
-                child.transform.GetComponent<Image>().sprite = activity.activityIcon;
+                child.transform.GetComponent<Image>().sprite = activity.ActivityIcon;
                 break;
             }
     }

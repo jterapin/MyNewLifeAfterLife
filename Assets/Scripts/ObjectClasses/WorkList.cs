@@ -25,7 +25,7 @@ public class WorkList : MonoBehaviour
             try
             {
                 slots[i].transform.GetComponent<Image>().enabled = true;
-                slots[i].transform.GetComponent<Image>().sprite = activities[i].activityIcon;
+                slots[i].transform.GetComponent<Image>().sprite = activities[i].ActivityIcon;
             }
             catch
             {

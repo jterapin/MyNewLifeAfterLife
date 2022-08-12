@@ -11,16 +11,6 @@ public class AnimationController : MonoBehaviour
         ActivityLog = GameObject.Find("ActivityLogController").GetComponent<ActivityLogDisplay>();
     }
 
-    private void StartActivity()
-    {
-        ActivityLog.UpdateText("Time to start my activity!\n");
-    }
-
-    private void FinishActivity()
-    {
-        ActivityLog.UpdateText($"Activity Complete....\n");
-    }
-
     private void AnnounceSuccessResult()
     {
         ActivityLog.UpdateText("Activity SUCCESS!\n");

@@ -1588,7 +1588,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slotHolder: {fileID: 1975314083}
   activityToAdd: {fileID: 0}
-  activities: []
+  activities:
+  - {fileID: 11400000, guid: 303c8b90a23934754abb2f6156e35527, type: 2}
 --- !u!1 &137688772
 GameObject:
   m_ObjectHideFlags: 0
@@ -3019,7 +3020,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &280968266
 GameObject:
@@ -7313,7 +7314,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &746937831
 SpriteRenderer:
@@ -12662,7 +12663,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 385, y: -20}
+  m_AnchoredPosition: {x: 40, y: -20}
   m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1120032146
@@ -12708,7 +12709,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1120032148}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1337811277}
+        m_TargetAssemblyTypeName: SchedulePanel, Assembly-CSharp
+        m_MethodName: AssignActivity
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 303c8b90a23934754abb2f6156e35527, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ActivityObject, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1120032147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15468,7 +15481,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.7619048, y: 0.7619048}
+  m_Size: {x: 0.6904762, y: 0.7380952}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -15697,7 +15710,7 @@ RectTransform:
   - {fileID: 1337811273}
   - {fileID: 9004006583121852283}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -16556,6 +16569,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 2006013257}
+--- !u!1 &1460794130
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1460794132}
+  - component: {fileID: 1460794133}
+  m_Layer: 0
+  m_Name: EventController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1460794132
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460794130}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1460794133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460794130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 101a01da18a4c4d46bc0093ee2baec08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MonthDisplay: {fileID: 1478363609}
+  MonthCount: 1
 --- !u!1 &1464617524
 GameObject:
   m_ObjectHideFlags: 0
@@ -16895,7 +16954,7 @@ RectTransform:
   m_GameObject: {fileID: 1478363607}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.000142, y: 1.000142, z: 1.000142}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1349064347}
@@ -16904,7 +16963,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 167}
-  m_SizeDelta: {x: 456.28, y: 57.08}
+  m_SizeDelta: {x: 300, y: 57.08}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1478363609
 MonoBehaviour:
@@ -16926,10 +16985,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Year 0 Month 0 Week 0
+  m_text: Month 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3f0be071b84494634b50d3b0852cd155, type: 2}
-  m_sharedMaterial: {fileID: 2411945352484356038, guid: 3f0be071b84494634b50d3b0852cd155, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: cf8b626c72ff94838bca5e95eff5c019, type: 2}
+  m_sharedMaterial: {fileID: -1900416741995151520, guid: cf8b626c72ff94838bca5e95eff5c019, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -16953,14 +17012,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45.9
-  m_fontSizeBase: 36
+  m_fontSize: 64
+  m_fontSizeBase: 64
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -19391,7 +19450,7 @@ RectTransform:
   - {fileID: 2072212934}
   - {fileID: 334933099}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -23055,7 +23114,7 @@ MonoBehaviour:
     m_Right: 20
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 2
+  m_ChildAlignment: 0
   m_Spacing: 5
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
@@ -23495,6 +23554,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 2006013257}
   stamina: {fileID: 636316252}
+  strength: {fileID: 596596780}
+  agility: {fileID: 976867792}
+  magic: {fileID: 2015665746}
+  charisma: {fileID: 137688774}
+  luck: {fileID: 1816222287}
+  stress: {fileID: 43353842}
+  gold: {fileID: 183519371}
+  sword: {fileID: 1194962194}
+  archery: {fileID: 759353582}
+  cooking: {fileID: 1080406873}
+  fishing: {fileID: 2111328677}
+  alchemy: {fileID: 1519504121}
+  darkMagic: {fileID: 186559080}
+  lightMagic: {fileID: 909506153}
+  worldLore: {fileID: 1376453500}
 --- !u!1 &2011619079
 GameObject:
   m_ObjectHideFlags: 0
@@ -26119,7 +26193,7 @@ GameObject:
   - component: {fileID: 8729570309932389315}
   - component: {fileID: 8174549077488628529}
   m_Layer: 5
-  m_Name: Back Button
+  m_Name: BackButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26241,6 +26315,7 @@ GameObject:
   - component: {fileID: 8604622060778344031}
   - component: {fileID: 4113314241666337791}
   - component: {fileID: 9004006583121852284}
+  - component: {fileID: 9004006583121852285}
   m_Layer: 5
   m_Name: ActivityPanel
   m_TagString: Untagged
@@ -26759,6 +26834,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 6021343099195185666}
   schedulePanel: {fileID: 1337811277}
-  Schedule: []
-  Player: {fileID: 2098953359}
-  ActivityLog: {fileID: 0}
+  schedule: []
+  time: {fileID: 1460794133}
+  backButton: {fileID: 8729570309932389315}
+--- !u!114 &9004006583121852285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6021343099195185666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 650c450f607b54bc392db7f40913047a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stamina: {fileID: 360652090}
+  strength: {fileID: 1933656734}
+  agility: {fileID: 636527710}
+  magic: {fileID: 1119083406}
+  charisma: {fileID: 848017735}
+  luck: {fileID: 118699806}
+  stress: {fileID: 672151077}
+  gold: {fileID: 50009972}
+  sword: {fileID: 919336028}
+  archery: {fileID: 1144300082}
+  cooking: {fileID: 1641515853}
+  fishing: {fileID: 1206701855}
+  alchemy: {fileID: 1162811088}
+  darkMagic: {fileID: 418960937}
+  lightMagic: {fileID: 1689479453}
+  worldLore: {fileID: 1748834414}

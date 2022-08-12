@@ -12,9 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72118f870c97747c0b821cba61c636f5, type: 3}
   m_Name: Mining
   m_EditorClassIdentifier: 
-  activityName: Mining
-  activityIcon: {fileID: 1339690592, guid: c8b86bc0f5f3e4bdfa7727f7ae695498, type: 3}
-  type: 1
+  ActivityName: Mining
+  ActivityIcon: {fileID: 1339690592, guid: c8b86bc0f5f3e4bdfa7727f7ae695498, type: 3}
+  Type: 1
   description: 
-  goldEarning: 0
-  goldEarningBonus: 0
+  ActivityAnimation: Mining
+  AnimationSuccess: ActivitySuccess
+  AnimationFailure: ActivityFailure
+  AffectedStat: 0
+  StatSuccessValue: 5
+  StatFailureValue: 1
+  StressSuccessValue: 2
+  StressFailureValue: 6
+  AffectedSkill: 7
+  SkillSuccessValue: 0
+  SkillFailureValue: 0
+  GoldEarned: 1000
+  GoldCost: 0
+  ActivityMessage: Time to find some gems!
+  SuccessMessage: Yay! Good haul~
+  FailureMessage: I got nothing but ore....

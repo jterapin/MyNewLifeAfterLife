@@ -7,7 +7,7 @@ public class ActivityLogDisplay : MonoBehaviour
 
     void Start()
     {
-        ActivityLog.text = "Hello\n";
+        ActivityLog.text = "";
     }
 
     public void UpdateText(string text)
@@ -15,4 +15,8 @@ public class ActivityLogDisplay : MonoBehaviour
         ActivityLog.text += text;
     }
 
+    public void ClearText()
+    {
+        ActivityLog.text = "";
+    }
 }

@@ -17,7 +17,7 @@ public class PlayerData : MonoBehaviour
         {"Stress", 0},
         {"Gold", 0},
     };
-    public Dictionary<string, int> skills = new Dictionary<string, int>()
+    public static Dictionary<string, int> skills = new Dictionary<string, int>()
     {
         {"Sword",5},
         {"Archery", 0},
@@ -29,15 +29,54 @@ public class PlayerData : MonoBehaviour
         {"World Lore", 0},
     };
 
-    public void AddStat(string stat, int num)
+    public void IncreaseStat(string stat, int statNum, int stressNum)
     {
         try
         {
-            stats[stat] += num;
+            stats[stat] += statNum;
+            stats["Stress"] += stressNum;
         }
         catch
         {
             Debug.Log("No such Stat is present");
+        }
+    }
+    public void IncreaseSkill(string skill, int skillNum)
+    {
+        try
+        {
+            skills[skill] += skillNum;
+        }
+        catch
+        {
+            Debug.Log("No such Skill is present");
+        }
+    }
+    public void IncreaseGold(int goldAmt)
+    {
+        try
+        {
+            stats["Gold"] += goldAmt;
+        }
+        catch
+        {
+            Debug.Log("Gold Doesn't Exist!");
+        }
+    }
+
+    public void DecreaseStress(int stressNum)
+    {
+        try
+        {
+            stats["Stress"] -= stressNum;
+            if (stats["Stress"] < 0)
+            {
+                stats["Stress"] = 0;
+            }
+        }
+        catch
+        {
+            Debug.Log("Stress Doesn't Exist!");
         }
     }
 

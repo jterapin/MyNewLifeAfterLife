@@ -12,18 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8919acd23d2a84fee8a02e374742c290, type: 3}
   m_Name: Do Nothing
   m_EditorClassIdentifier: 
-  activityName: Do Nothing
-  activityIcon: {fileID: 21300000, guid: 1427ff290abd64bab92fe6c819d0554b, type: 3}
-  type: 2
+  ActivityName: Do Nothing
+  ActivityIcon: {fileID: 21300000, guid: 1427ff290abd64bab92fe6c819d0554b, type: 3}
+  Type: 2
   description: Hahahaha do nothing :)
-  activityAnimation: DoNothing
-  animationSuccess: 
-  animationFailure: 
-  affectedStat: 3
-  statSuccessValue: 0
-  statFailureValue: 0
-  stressSuccessValue: 0
-  stressFailureValue: 0
-  activityMessage: 
-  successMessage: 
-  failureMessage: 
+  ActivityAnimation: DoNothing
+  AnimationSuccess: 
+  AnimationFailure: 
+  AffectedStat: 6
+  StatSuccessValue: 0
+  StatFailureValue: 0
+  StressSuccessValue: 0
+  StressFailureValue: 0
+  AffectedSkill: 0
+  SkillSuccessValue: 0
+  SkillFailureValue: 0
+  GoldEarned: 0
+  GoldCost: 0
+  StressValue: 5
+  ActivityMessage: I did nothing today but daydream~
+  SuccessMessage: 
+  FailureMessage: 
