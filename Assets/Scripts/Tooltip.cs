@@ -7,6 +7,7 @@ using TMPro;
 [ExecuteInEditMode()]
 public class Tooltip : MonoBehaviour
 {
+    [SerializeField] private Camera uiCamera;
     public TextMeshProUGUI headerField;
     public TextMeshProUGUI contentField;
     public LayoutElement layoutElement;
@@ -24,8 +25,8 @@ public class Tooltip : MonoBehaviour
 
     private void Update()
     {
-        // Vector2 position = Input.mousePosition;
-        // transform.position = position;
-
+        Vector2 localPoint;
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(transform.parent.GetComponent<RectTransform>(), Input.mousePosition, uiCamera, out localPoint);
+        transform.localPosition = localPoint;
     }
 }
