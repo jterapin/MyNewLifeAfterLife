@@ -4,6 +4,7 @@ using UnityEngine;
 public class PlayerData : MonoBehaviour
 {
     public static string playerName = "";
+    public static Sprite playerSprite;
     public Animator activityAnimator;
     public Animator roomAnimator;
     public static RuntimeAnimatorController newController;

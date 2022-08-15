@@ -6,7 +6,8 @@ using TMPro;
 public class CreationMenu : MonoBehaviour
 {
     public TMP_InputField playerName;
-    public RuntimeAnimatorController playerSprite;
+    public RuntimeAnimatorController playerAnimatorController;
+    public Sprite playerSprite;
 
     Button selectedButton;
     Color selectedButtonColor = Color.blue;
@@ -29,13 +30,20 @@ public class CreationMenu : MonoBehaviour
     public void PlayGame()
     {
         PlayerData.playerName = playerName.text;
-        PlayerData.newController = playerSprite;
+        PlayerData.playerSprite = playerSprite;
+        PlayerData.newController = playerAnimatorController;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    public void selectSprite(RuntimeAnimatorController playerSelection)
+    public void selectController(RuntimeAnimatorController playerSelection)
     {
-        playerSprite = playerSelection;
+        playerAnimatorController = playerSelection;
+    }
+
+    public void selectSprite(Sprite selectedPlayerSprite)
+    {
+        playerSprite = selectedPlayerSprite;
+
     }
 
     public void ButtonClicked(Button button)

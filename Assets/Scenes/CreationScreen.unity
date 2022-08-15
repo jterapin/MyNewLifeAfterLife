@@ -364,7 +364,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 375106427}
         m_TargetAssemblyTypeName: CreationMenu, Assembly-CSharp
-        m_MethodName: selectSprite
+        m_MethodName: ButtonClicked
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 111619046}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 375106427}
+        m_TargetAssemblyTypeName: CreationMenu, Assembly-CSharp
+        m_MethodName: selectController
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 22100000, guid: b918feaa731094e65888e9b744a363af, type: 2}
@@ -377,11 +389,11 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 375106427}
         m_TargetAssemblyTypeName: CreationMenu, Assembly-CSharp
-        m_MethodName: ButtonClicked
+        m_MethodName: selectSprite
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 111619046}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_ObjectArgument: {fileID: -1906034059, guid: 0ae2dff2dee3842f5ab79985de79f546, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -531,7 +543,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 375106427}
         m_TargetAssemblyTypeName: CreationMenu, Assembly-CSharp
-        m_MethodName: selectSprite
+        m_MethodName: ButtonClicked
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 337135787}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 375106427}
+        m_TargetAssemblyTypeName: CreationMenu, Assembly-CSharp
+        m_MethodName: selectController
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 22100000, guid: a4ac8aabeb2424d929444afe261d3d93, type: 2}
@@ -544,11 +568,11 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 375106427}
         m_TargetAssemblyTypeName: CreationMenu, Assembly-CSharp
-        m_MethodName: ButtonClicked
+        m_MethodName: selectSprite
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 337135787}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_ObjectArgument: {fileID: 1583738192, guid: 80c223fda70af41588a296819df50377, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -709,6 +733,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: {fileID: 958735918}
+  playerAnimatorController: {fileID: 0}
   playerSprite: {fileID: 0}
   startButton: {fileID: 1138907357}
 --- !u!1 &727679483
@@ -817,7 +842,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 375106427}
         m_TargetAssemblyTypeName: CreationMenu, Assembly-CSharp
-        m_MethodName: selectSprite
+        m_MethodName: ButtonClicked
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 727679486}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 375106427}
+        m_TargetAssemblyTypeName: CreationMenu, Assembly-CSharp
+        m_MethodName: selectController
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 22100000, guid: 5e92826a724084c8091f5c724af4973a, type: 2}
@@ -830,11 +867,11 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 375106427}
         m_TargetAssemblyTypeName: CreationMenu, Assembly-CSharp
-        m_MethodName: ButtonClicked
+        m_MethodName: selectSprite
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 727679486}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_ObjectArgument: {fileID: -2076119871, guid: f9f67c192161b418588a50933296171e, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1316,7 +1353,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 375106427}
         m_TargetAssemblyTypeName: CreationMenu, Assembly-CSharp
-        m_MethodName: selectSprite
+        m_MethodName: ButtonClicked
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1075306497}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 375106427}
+        m_TargetAssemblyTypeName: CreationMenu, Assembly-CSharp
+        m_MethodName: selectController
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 9100000, guid: e84fce1ca28724c2d83442ba6295c139, type: 2}
@@ -1324,16 +1373,16 @@ MonoBehaviour:
             UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Player
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 375106427}
         m_TargetAssemblyTypeName: CreationMenu, Assembly-CSharp
-        m_MethodName: ButtonClicked
+        m_MethodName: selectSprite
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1075306497}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_ObjectArgument: {fileID: 268078770, guid: 65726604edb9d4a7281a8ff6e9fd10db, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1773,7 +1822,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 375106427}
         m_TargetAssemblyTypeName: CreationMenu, Assembly-CSharp
-        m_MethodName: selectSprite
+        m_MethodName: ButtonClicked
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1213270121}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 375106427}
+        m_TargetAssemblyTypeName: CreationMenu, Assembly-CSharp
+        m_MethodName: selectController
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 22100000, guid: 4648d37d9f7f14160af8da1367dffc9d, type: 2}
@@ -1786,11 +1847,11 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 375106427}
         m_TargetAssemblyTypeName: CreationMenu, Assembly-CSharp
-        m_MethodName: ButtonClicked
+        m_MethodName: selectSprite
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1213270121}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_ObjectArgument: {fileID: -849715392, guid: a89d0e54b28a949bcaa134c9c2cbbc3c, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2251,7 +2312,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 375106427}
         m_TargetAssemblyTypeName: CreationMenu, Assembly-CSharp
-        m_MethodName: selectSprite
+        m_MethodName: ButtonClicked
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1639950739}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 375106427}
+        m_TargetAssemblyTypeName: CreationMenu, Assembly-CSharp
+        m_MethodName: selectController
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 22100000, guid: 3293b87fdcaa7426f8b4f76d85681287, type: 2}
@@ -2264,11 +2337,11 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 375106427}
         m_TargetAssemblyTypeName: CreationMenu, Assembly-CSharp
-        m_MethodName: ButtonClicked
+        m_MethodName: selectSprite
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1639950739}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_ObjectArgument: {fileID: -545074095, guid: f1d1b68c1d6664a3186ec5b6a83f09c5, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2418,7 +2491,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 375106427}
         m_TargetAssemblyTypeName: CreationMenu, Assembly-CSharp
-        m_MethodName: selectSprite
+        m_MethodName: ButtonClicked
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1796062929}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 375106427}
+        m_TargetAssemblyTypeName: CreationMenu, Assembly-CSharp
+        m_MethodName: selectController
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 22100000, guid: 68f2a43bf51c94f7db85b4bf93837ad2, type: 2}
@@ -2431,11 +2516,11 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 375106427}
         m_TargetAssemblyTypeName: CreationMenu, Assembly-CSharp
-        m_MethodName: ButtonClicked
+        m_MethodName: selectSprite
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1796062929}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_ObjectArgument: {fileID: 1918333779, guid: c19929b9605b14d8eb7773d2eeabc507, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2867,7 +2952,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 375106427}
         m_TargetAssemblyTypeName: CreationMenu, Assembly-CSharp
-        m_MethodName: selectSprite
+        m_MethodName: ButtonClicked
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2002942233}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 375106427}
+        m_TargetAssemblyTypeName: CreationMenu, Assembly-CSharp
+        m_MethodName: selectController
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 22100000, guid: d1930cc1e1324473c9e280bc8085e07e, type: 2}
@@ -2880,11 +2977,11 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 375106427}
         m_TargetAssemblyTypeName: CreationMenu, Assembly-CSharp
-        m_MethodName: ButtonClicked
+        m_MethodName: selectSprite
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2002942233}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_ObjectArgument: {fileID: 117514153, guid: 076fafb911f8147b0a441ba76a287c43, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

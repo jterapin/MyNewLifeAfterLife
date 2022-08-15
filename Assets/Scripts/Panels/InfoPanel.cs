@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class InfoPanel : MonoBehaviour
@@ -9,6 +10,10 @@ public class InfoPanel : MonoBehaviour
     private Dictionary<string, int> skillsDict = PlayerData.skills;
 
     [SerializeField] private GameObject Panel;
+
+    // Info Box
+    [SerializeField] private TMP_Text playerName;
+    [SerializeField] private GameObject playerPortrait;
 
     // Stats
     [Header("Stats")]
@@ -34,6 +39,8 @@ public class InfoPanel : MonoBehaviour
 
     private void Start()
     {
+        playerName.text = PlayerData.playerName;
+        playerPortrait.GetComponent<Image>().sprite = PlayerData.playerSprite;
 
         if (!Panel.GetComponent<InfoPanel>().enabled)
         {

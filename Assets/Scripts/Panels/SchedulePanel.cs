@@ -36,7 +36,6 @@ public class SchedulePanel : MonoBehaviour
                 weeks[i] = activity;
                 int position = i + 1;
                 string str = "Content/CurrentSchedule/Week" + position.ToString() + "/Slot";
-                Debug.Log(str);
                 Transform child = transform.Find(str);
                 child.transform.GetComponent<Image>().sprite = activity.ActivityIcon;
                 break;
