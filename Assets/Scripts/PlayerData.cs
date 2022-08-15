@@ -4,7 +4,8 @@ using UnityEngine;
 public class PlayerData : MonoBehaviour
 {
     public static string playerName = "";
-    public Animator animator;
+    public Animator activityAnimator;
+    public Animator roomAnimator;
     public static RuntimeAnimatorController newController;
 
     public static Dictionary<string, int> stats = new Dictionary<string, int>()
@@ -39,7 +40,8 @@ public class PlayerData : MonoBehaviour
 
     public void SetAnimator()
     {
-        animator.runtimeAnimatorController = newController;
+        activityAnimator.runtimeAnimatorController = newController;
+        roomAnimator.runtimeAnimatorController = newController;
     }
 
     public void IncreaseStat(string stat, int statNum, int stressNum)
