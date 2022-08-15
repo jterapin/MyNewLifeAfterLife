@@ -17,7 +17,7 @@ MonoBehaviour:
   Type: 0
   description: 
   ActivityAnimation: Cardio
-  AnimationSuccess: CardioSuccess
+  AnimationSuccess: ActivitySuccess
   AnimationFailure: CardioFailure
   AffectedStat: 0
   StatSuccessValue: 5
@@ -27,6 +27,9 @@ MonoBehaviour:
   AffectedSkill: 7
   SkillSuccessValue: 0
   SkillFailureValue: 0
+  GoldEarned: 0
+  GoldCost: 0
+  StressValue: 0
   ActivityMessage: Time to run~
   SuccessMessage: Good week! I ran like the wind~
   FailureMessage: Oops, I fell over. Gotta rest up.

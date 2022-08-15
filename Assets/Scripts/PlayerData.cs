@@ -3,9 +3,10 @@ using UnityEngine;
 
 public class PlayerData : MonoBehaviour
 {
-    public string playerName = "Player";
-    public string previousLife = "";
-    public string starSign = "";
+    public static string playerName = "";
+    public Animator animator;
+    public static RuntimeAnimatorController newController;
+
     public static Dictionary<string, int> stats = new Dictionary<string, int>()
     {
         {"Stamina",5},
@@ -28,6 +29,18 @@ public class PlayerData : MonoBehaviour
         {"Light Magic", 0},
         {"World Lore", 0},
     };
+
+    void Start()
+    {
+        SetAnimator();
+        Debug.Log(playerName);
+
+    }
+
+    public void SetAnimator()
+    {
+        animator.runtimeAnimatorController = newController;
+    }
 
     public void IncreaseStat(string stat, int statNum, int stressNum)
     {

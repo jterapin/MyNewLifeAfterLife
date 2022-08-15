@@ -17,4 +17,5 @@ public class PanelConfig : MonoBehaviour
         Panel.SetActive(false);
     }
 
+
 }
