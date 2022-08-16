@@ -10,26 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49199cba859fd457083312465b8bf8f2, type: 3}
-  m_Name: Cardio
+  m_Name: Sword
   m_EditorClassIdentifier: 
-  ActivityName: Cardio
-  ActivityIcon: {fileID: 775885816, guid: db0ed26773cae442ea6fe6671eb3e46e, type: 3}
+  ActivityName: Sword
+  ActivityIcon: {fileID: -259844283, guid: db0ed26773cae442ea6fe6671eb3e46e, type: 3}
   Type: 0
   description: 
-  ActivityAnimation: Cardio
+  ActivityAnimation: Sword
   AnimationSuccess: ActivitySuccess
-  AnimationFailure: CardioFailure
-  AffectedStat: 0
+  AnimationFailure: ActivityFailure
+  AffectedStat: 1
   StatSuccessValue: 5
   StatFailureValue: 1
   StressSuccessValue: 2
   StressFailureValue: 5
-  AffectedSkill: 7
-  SkillSuccessValue: 0
-  SkillFailureValue: 0
+  AffectedSkill: 0
+  SkillSuccessValue: 5
+  SkillFailureValue: 3
   GoldEarned: 0
   GoldCost: 0
   StressValue: 0
-  ActivityMessage: Time to run~
-  SuccessMessage: Good week! I ran like the wind~
-  FailureMessage: Oops, I fell over. Gotta rest up.
+  ActivityMessage: Swishy swishhhh~
+  SuccessMessage: Nice, I feel like I got stronger!
+  FailureMessage: Ugh, I pulled a muscle!

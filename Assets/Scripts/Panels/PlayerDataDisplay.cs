@@ -61,9 +61,9 @@ public class PlayerDataDisplay : MonoBehaviour
         cooking.text = skillsDict["Cooking"].ToString();
         fishing.text = skillsDict["Fishing"].ToString();
         alchemy.text = skillsDict["Alchemy"].ToString();
-        darkMagic.text = skillsDict["Dark Magic"].ToString();
-        lightMagic.text = skillsDict["Light Magic"].ToString();
-        worldLore.text = skillsDict["World Lore"].ToString();
+        darkMagic.text = skillsDict["DarkMagic"].ToString();
+        lightMagic.text = skillsDict["LightMagic"].ToString();
+        worldLore.text = skillsDict["WorldLore"].ToString();
     }
 
 

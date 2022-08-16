@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Do Nothing
   m_EditorClassIdentifier: 
   ActivityName: Do Nothing
-  ActivityIcon: {fileID: 21300000, guid: 1427ff290abd64bab92fe6c819d0554b, type: 3}
+  ActivityIcon: {fileID: 1016941001, guid: db0ed26773cae442ea6fe6671eb3e46e, type: 3}
   Type: 2
   description: Hahahaha do nothing :)
   ActivityAnimation: DoNothing

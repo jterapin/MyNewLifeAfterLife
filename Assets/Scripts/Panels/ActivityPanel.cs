@@ -131,6 +131,7 @@ public class ActivityPanel : MonoBehaviour
                     if (schedule[i].AffectedSkill != AffectedSkill.None)
                     {
                         string affectedSkill = schedule[i].AffectedSkill.ToString();
+                        Debug.Log(affectedSkill);
                         activityLog.UpdateText($"Gained {schedule[i].SkillSuccessValue} {affectedSkill}\n");
                         playerData.IncreaseSkill(affectedSkill, schedule[i].SkillSuccessValue);
                     }

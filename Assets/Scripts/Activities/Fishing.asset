@@ -10,26 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 72118f870c97747c0b821cba61c636f5, type: 3}
-  m_Name: Mining
+  m_Name: Fishing
   m_EditorClassIdentifier: 
-  ActivityName: Mining
-  ActivityIcon: {fileID: 1374492385, guid: db0ed26773cae442ea6fe6671eb3e46e, type: 3}
+  ActivityName: Fishing
+  ActivityIcon: {fileID: -586720617, guid: db0ed26773cae442ea6fe6671eb3e46e, type: 3}
   Type: 1
   description: 
-  ActivityAnimation: Mining
+  ActivityAnimation: Fishing
   AnimationSuccess: ActivitySuccess
   AnimationFailure: ActivityFailure
   AffectedStat: 0
-  StatSuccessValue: 5
+  StatSuccessValue: 3
   StatFailureValue: 1
   StressSuccessValue: 2
   StressFailureValue: 6
-  AffectedSkill: 7
-  SkillSuccessValue: 0
-  SkillFailureValue: 0
-  GoldEarned: 1000
+  AffectedSkill: 3
+  SkillSuccessValue: 6
+  SkillFailureValue: 2
+  GoldEarned: 500
   GoldCost: 0
   StressValue: 0
-  ActivityMessage: Time to find some gems!
-  SuccessMessage: Yay! Good haul~
-  FailureMessage: I got nothing but ore....
+  ActivityMessage: Here fishy fishy....
+  SuccessMessage: Aw yeah got me some fishies!
+  FailureMessage: Sharks got the fishies, no fishy for me...

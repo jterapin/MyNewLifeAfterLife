@@ -11,7 +11,7 @@ public class PlayerData : MonoBehaviour
 
     public static Dictionary<string, int> stats = new Dictionary<string, int>()
     {
-        {"Stamina",5},
+        {"Stamina", 0},
         {"Strength", 0},
         {"Agility", 0},
         {"Magic", 0},
@@ -22,14 +22,14 @@ public class PlayerData : MonoBehaviour
     };
     public static Dictionary<string, int> skills = new Dictionary<string, int>()
     {
-        {"Sword",5},
+        {"Sword", 0},
         {"Archery", 0},
         {"Cooking", 0},
         {"Fishing", 0},
         {"Alchemy", 0},
-        {"Dark Magic", 0},
-        {"Light Magic", 0},
-        {"World Lore", 0},
+        {"DarkMagic", 0},
+        {"LightMagic", 0},
+        {"WorldLore", 0},
     };
 
     void Start()
