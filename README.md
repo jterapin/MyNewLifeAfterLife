@@ -1,0 +1,18 @@
+# My New Life After Life
+
+<p>This is my capstone project for <a href="https://adadevelopersacademy.org/" target="_blank">Ada Developers Academy</a>&nbsp;which was completed within three weeks.&nbsp;<br><br><strong>My New Life After Life </strong>is a stat-rising game, depending on what stats you (player) were able to collect for a year - you get a different ending. Inspired by a few stat-rising games such as Long Live the Queen,&nbsp;Growing Up: Life of the ’90s, and Princess Maker.&nbsp; Honestly, I just wanted to make an isekai-themed game.</p>
+<p><br></p>
+<h3>Concept</h3>
+<p>For some unexpected twist of an event (common themes are getting hit by a truck-san, passing out from working overtime, being struck by lightning, etc) - you are now transported to a whole new fantasy world.&nbsp;</p>
+<p>Schedule out your day! Make your new life in this new world. Will you work at a nearby fishery? Are you going to train healing magic? Or spend some time traveling? All your choices will affect your stats.</p>
+<p>At the end of one year, your total stats will determine your ending!<br></p>
+<p><br></p>
+<h3>Features</h3>
+<ul><li>There is a total of 8 sprites to pick as your character!</li><li>Plan out your month by clicking on the activity in the Schedule Panel. Hovering over an activity will give you details on what stats the activity increases.</li><li>You can delete a scheduled activity by clicking it&nbsp;under the current schedule (right side of the Schedule Panel).</li><li>Currently, we have the following Activities:&nbsp; Cardio, Archery, Dark Magic, Light Magic, Sword, Mining, Fishing, and Rest.</li><li>You will need to schedule the entire month before&nbsp;you can proceed by clicking on the Month Start button.</li></ul>
+<p><br></p>
+<h3>Asset Credits</h3>
+<ul><li>Simple Top Down Character by&nbsp;<a href="https://immunitys.itch.io/pixel-top-down-character" target="_blank">ImmunityS</a>
+</li><li>Pixel Skies Demo by <a href="https://digitalmoons.itch.io/pixel-skies-demo" target="_blank">Digital Moons</a></li><li>Colorful 16px Pixel Tiles pack by <a href="https://digitalmoons.itch.io/pixel-skies-demo" target="_blank">Digital Moons</a>
+</li><li>Simple Sky Pixel Backgrounds by&nbsp;<a href="https://caniaeast.itch.io/simple-sky-pixel-backgrounds" target="_blank">Cania</a></li><li>FREE Popup Emotes by&nbsp;<a href="https://pipoya.itch.io/free-popup-emotes-pack" target="_blank">Pipoya</a></li><li>Quiet Cabin by&nbsp;<a href="https://nicopardo.itch.io/quietcabin" target="_blank">NicoPardo</a></li><li>Pixel Art Effect - FX084 by&nbsp;<a href="https://nyknck.itch.io/fx084" target="_blank">NYKNCK</a></li><li>Pixel Art GUI Elements by&nbsp;<a href="https://mounirtohami.itch.io/pixel-art-gui-elements" target="_blank">Mounir Tohami</a></li><li>Shikashi's Fantasy Icons Pack by&nbsp;<a href="https://cheekyinkling.itch.io/shikashis-fantasy-icons-pack" target="_blank">cheekyinkling</a></li><li>MinimalPixel Font by&nbsp;<a href="https://mounirtohami.itch.io/minimalpixel-font" target="_blank">Mounir Tohami</a></li><li>Abaddon Fonts by&nbsp;<a href="https://caffinate.itch.io/abaddon" target="_blank">nathan scott</a></li><li>BitPotion by&nbsp;<a href="https://joebrogers.itch.io/bitpotion" target="_blank">Joeb Rogers</a></li><li>Silver<strong>&nbsp;</strong>by&nbsp;<a href="https://poppyworks.itch.io/silver" target="_blank">Poppy Works</a></li><li>m3x6 by&nbsp;<a href="https://managore.itch.io/m3x6" target="_blank">Daniel Linssen</a></li><li>m5x7 by&nbsp;<a href="https://managore.itch.io/m5x7" target="_blank">Daniel Linssen</a></li><li>m6x11 by&nbsp;<a href="https://managore.itch.io/m6x11" target="_blank">Daniel Linssen</a><br>
+</li></ul>
+<p><br></p>
